@@ -1,0 +1,120 @@
+.step-s {
+  // .step-s__row-title
+  &__row-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  // .step-s__title
+  &__title {
+    margin: 0;
+  }
+  // .step-s__scores
+  &__scores {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  // .step-s__teachers
+  &__teachers {
+  }
+}
+.teacher-s {
+  // .teacher-s__add
+  &__add-temp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 2px dashed #e6e0fa;
+    border-radius: 16px;
+    height: 280px;
+    flex: 0 0 100%;
+  }
+}
+@media (max-width: $mobile) {
+  .step-s__row-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+.item-conversion {
+  margin-bottom: 30px;
+}
+.green {
+  color: #1f9756;
+  padding-right: 5px;
+}
+.teacher-s {
+  // .teacher-s__add
+  &__add-temp-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 2px dashed #e6e0fa;
+    border-radius: 16px;
+    height: 280px;
+    flex: 0 0 181px;
+  }
+}
+
+.teacher-s__item-temp {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #efe8f8;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 16px;
+  height: 280px;
+  width: 312px;
+}
+.teacher-s__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.teacher-s__text {
+  margin-top: 20px;
+}
+
+.step-s {
+  // .step-s__next-step
+  &__next-step {
+    margin-top: -15px;
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__next-step a {
+    color: #966cee;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.opinion {
+  // .opinion__experience
+  &__experience {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
+    margin-bottom: 44px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border-top: 1px solid #e6e0fa;
+    border-bottom: 1px solid #e6e0fa;
+    padding: 16px 0;
+  }
+}
