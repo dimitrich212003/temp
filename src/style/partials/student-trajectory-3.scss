@@ -2,7 +2,7 @@
 // Student-trajectory-3
 ///////////////////////////////////////////////////////////////////////////////
 .role-choosing {
-  padding-top: 52px;
+  padding: 50px 0;
   // .role-choosing__body
   &__body {
   }
@@ -41,7 +41,7 @@
     transition: all 0.5s ease 0s;
   }
   &__element:hover {
-    transform: scale(1.3, 1.3);
+    transform: scale(1.15);
   }
   // .role-choosing__item
   &__item:first-child {
@@ -54,7 +54,7 @@
     background: #ccf7e5;
     border-radius: 24px;
     width: 474px;
-    height: 474px;
+    height: 370px;
   }
   // .role-choosing__icon
   &__icon {
@@ -123,12 +123,18 @@
   background-size: 100%;
 }
 
+@media (min-width: $pc) {
+  .role-choosing__element {
+    margin-top: -20px;
+  }
+}
+
 @media (max-width: $pc) {
   .role-choosing__item {
     height: 334px;
   }
   .role-choosing__element:hover {
-    transform: scale(1.1, 1.1);
+    transform: scale(1.1);
   }
 }
 @media (max-width: $tablet) {

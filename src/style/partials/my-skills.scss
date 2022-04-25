@@ -74,11 +74,9 @@
   // .my-skills__present
   &__present {
     background: 0;
-    position: absolute;
-    width: 88px;
-    height: 89px;
-    left: 1350px;
-    top: 0px;
+    position: fixed;
+    top: 70%;
+
   }
   &__item:nth-child(even) {
     background: #fbfafd;
@@ -136,15 +134,15 @@
     font-size: 14px;
     line-height: 20px;
   }
-  &__btn-row button:hover:nth-child(1) {
-    background: #966cee;
-    color: #fff;
-  }
   &__btn-row button:hover:nth-child(2) {
     background: #966cee;
     color: #fff;
   }
   &__btn-row button:hover:nth-child(3) {
+    background: #966cee;
+    color: #fff;
+  }
+  &__btn-row button:hover:nth-child(4) {
     background: #966cee;
     color: #fff;
   }
@@ -193,7 +191,7 @@
 }
 @media (max-width: 1570px) {
   .my-skills__present {
-    left: 92%;
+    left: 85%;
   }
 }
 
@@ -236,11 +234,11 @@
   .my-skills__final-btn button:nth-child(2) {
     width: 100%;
   }
-  .item__text{
+  .item__text {
     text-align: center;
   }
   .my-skills__present {
-    left: 88%;
+    left: 80%;
   }
 }
 
@@ -259,17 +257,24 @@
   }
 }
 
+.my-skills__present img {
+  @include adaptiveValue("width", 128, 70, 1);
+  @include adaptiveValue("height", 128, 70, 1);
+}
+
 @media (max-width: 576px) {
   .my-skills {
     padding-left: 0;
     padding-right: 0;
   }
-  .my-skills__present{
-    left: 81%;
-  }
-  .my-skills__present img{
 
-    width: 88px;
-    height: 89px;
+  .my-skills__present {
+    left: 85%;
+  }
+}
+
+@media (max-width: $mobileSmall) {
+  .my-skills__present {
+    left: 77%;
   }
 }

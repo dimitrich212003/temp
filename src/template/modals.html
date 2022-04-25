@@ -1881,12 +1881,656 @@
               </div>
               <div class="scores__paragraph">
                 Здесь ты можешь указать информацию о стажировках, практиках,
-                проектной работе и работе по найму. <span>Чем больше информации будет
-                указано, тем более точной будет траектория</span>
+                проектной работе и работе по найму.
+                <span
+                  >Чем больше информации будет указано, тем более точной будет
+                  траектория</span
+                >
               </div>
               <button class="scores__btn">Понятно</button>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade modal-worker"
+  tabindex="-1"
+  id="special-education-popp"
+  style="display: none"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content modal-st">
+      <div class="modal-content bg-white">
+        <div class="modal-body">
+          <div class="modal-top db">
+            <h4 class="modal-title no-margin no-margin main__title">
+              Высшее образование
+            </h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.25 5L5.25 19"
+                  stroke="#A897BD"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M5.25 5L19.25 19"
+                  stroke="#A897BD"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <form action="#">
+            <div class="step-s__selects step-s__input">
+              <label class="step-s__select_label select-label">
+                <div class="step-s__input_text main__text">Страна</div>
+                <select name="country">
+                  <option value="Russia" selected>Россия</option>
+                  <option value="2">Страна №1</option>
+                  <option value="3">Страна №2</option>
+                  <option value="4">Страна №3</option>
+                </select>
+              </label>
+              <label class="step-s__select_label select-label">
+                <div class="step-s__input_text main__text">Город</div>
+                <select name="sity">
+                  <option value="Moscow" selected>Москва</option>
+                  <option value="2">Город №1</option>
+                  <option value="3">Город №2</option>
+                  <option value="4">Город №3</option>
+                </select>
+              </label>
+            </div>
+            <label class="step-s__select_label select-label step-s__input">
+              <div class="step-s__input_text main__text">
+                Тип учебного заведения
+              </div>
+              <select name="sity">
+                <option value="Moscow" selected>Колледж</option>
+                <option value="2">Университет</option>
+              </select>
+            </label>
+            <div class="step-s__selects step-s__input">
+              <label class="step-s__select_label select-label">
+                <div class="step-s__input_text main__text">Форма обучения</div>
+                <select name="country">
+                  <option value="Russia" selected>Очная</option>
+                  <option value="2">Заочная</option>
+                  <option value="3">Очно-заочная</option>
+                </select>
+              </label>
+              <label class="step-s__select_label select-label">
+                <div class="step-s__input_text main__text">Уровень</div>
+                <select name="sity">
+                  <option value="Moscow" selected>Бакалавриат</option>
+                  <option value="2">Специалитет</option>
+                  <option value="3">Магистратура</option>
+                </select>
+              </label>
+            </div>
+            <div class="step-s__input">
+              <div class="step-s__input_text main__text">
+                Наименование учебного заведения
+              </div>
+              <input class="main__input" type="text" name="name" />
+            </div>
+            <div class="step-s__input">
+              <div class="step-s__input_text main__text">
+                Направление подготовки
+              </div>
+              <input class="main__input" type="text" name="name" />
+            </div>
+            <div class="step-s__input">
+              <div class="step-s__input_text main__text">
+                На каком курс вы сейчас обучаетесь?
+              </div>
+              <input class="main__input" type="text" name="name" />
+            </div>
+            <div class="step-s__radio step-s__input">
+              <div class="step-s__radio_text main__text">
+                Обучение полностью окончено
+              </div>
+              <div class="step-s__radio_inputs">
+                <label class="step-s__radio_label radio-label">
+                  <input type="radio" name="author" value="teacher" />
+                  <div class="radio-label__fake"></div>
+                  <div class="radio-label__text main__text">Да</div>
+                </label>
+                <label class="step-s__radio_label radio-label">
+                  <input type="radio" name="author" value="company" />
+                  <div class="radio-label__fake"></div>
+                  <div class="radio-label__text main__text">Нет</div>
+                </label>
+              </div>
+            </div>
+            <div class="prof-e__bottom_buttons mt">
+              <button
+                type="button"
+                data-dismiss="modal"
+                class="prof-e__bottom_btn main__btn-light"
+              >
+                Отменить
+              </button>
+              <button
+                data-dismiss="modal"
+                type="submit"
+                class="prof-e__bottom_btn main__btn"
+              >
+                Готово
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade modal-worker"
+  tabindex="-1"
+  id="prof-experiencee"
+  style="display: none"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content modal-st">
+      <div class="modal-content bg-white">
+        <div class="modal-body">
+          <div class="modal-top db">
+            <h4 class="modal-title no-margin no-margin main__title">
+              Профессиональный опыт
+            </h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.25 5L5.25 19"
+                  stroke="#A897BD"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M5.25 5L19.25 19"
+                  stroke="#A897BD"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <form action="#">
+            <div class="step-s__selects step-s__input">
+              <label class="step-s__select_label select-label">
+                <div class="step-s__input_text main__text">Страна</div>
+                <select name="country">
+                  <option value="Russia" selected>Россия</option>
+                  <option value="2">Страна №1</option>
+                  <option value="3">Страна №2</option>
+                  <option value="4">Страна №3</option>
+                </select>
+              </label>
+              <label class="step-s__select_label select-label">
+                <div class="step-s__input_text main__text">Город</div>
+                <select name="sity">
+                  <option value="Moscow" selected>Москва</option>
+                  <option value="2">Город №1</option>
+                  <option value="3">Город №2</option>
+                  <option value="4">Город №3</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="step-s__input">
+              <div class="step-s__input_text main__text">Должность</div>
+              <input class="main__input" type="text" name="name" />
+              <div class="tag">Продуктовый менеджер</div>
+            </div>
+
+            <div class="step-s__selects step-s__input">
+              <label class="step-s__select_label select-label">
+                <div class="step-s__input_text main__text">Профобласть</div>
+                <select name="country">
+                  <option value="Russia" selected>Руководящая</option>
+                  <option value="2">Руководящая №1</option>
+                  <option value="3">Руководящая №2</option>
+                  <option value="4">Руководящая №3</option>
+                </select>
+              </label>
+              <label class="step-s__select_label select-label">
+                <div class="step-s__input_text main__text">
+                  Отрасль компании
+                </div>
+                <select name="sity">
+                  <option value="Moscow" selected>Полная</option>
+                  <option value="2">Полная №1</option>
+                  <option value="3">Полная №2</option>
+                  <option value="4">Полная №3</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="step-s__selects step-s__input">
+              <label class="step-s__select_label select-label">
+                <div class="step-s__input_text main__text">
+                  Уровень должности
+                </div>
+                <select name="country">
+                  <option value="Russia" selected>Руководящая</option>
+                  <option value="2">Руководящая №1</option>
+                  <option value="3">Руководящая №2</option>
+                  <option value="4">Руководящая №3</option>
+                </select>
+              </label>
+              <label class="step-s__select_label select-label">
+                <div class="step-s__input_text main__text">Тип занятости</div>
+                <select name="sity">
+                  <option value="Moscow" selected>Полная</option>
+                  <option value="2">Полная №1</option>
+                  <option value="3">Полная №2</option>
+                  <option value="4">Полная №3</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="step-s__selects step-s__input">
+              <div class="step-s__row-item input__row-item">
+                <div class="step-s__input_text main__text">Начало работы</div>
+                <input class="main__input" type="date" name="start" />
+              </div>
+              <div class="step-s__row-item input__row-item">
+                <div class="step-s__input_text main__text">Окончание</div>
+                <input class="main__input" type="date" name="start" />
+              </div>
+            </div>
+
+            <div class="input__add">
+              <div class="step-s__input">
+                <div class="input__text-icon">
+                  <div class="step-s__input_text main__text-neutral no-margin">
+                    Какие профессиональные навыки вы получили - Hard Skills
+                  </div>
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.5 4C8.08172 4 4.5 7.58172 4.5 12C4.5 16.4183 8.08172 20 12.5 20C16.9183 20 20.5 16.4183 20.5 12C20.5 7.58172 16.9183 4 12.5 4ZM2.5 12C2.5 6.47715 6.97715 2 12.5 2C18.0228 2 22.5 6.47715 22.5 12C22.5 17.5228 18.0228 22 12.5 22C6.97715 22 2.5 17.5228 2.5 12Z"
+                      fill="#D0C2DE"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.7582 8.02098C12.2927 7.94113 11.814 8.02861 11.4068 8.26793C10.9996 8.50725 10.6902 8.88295 10.5335 9.32851C10.3502 9.8495 9.77926 10.1233 9.25827 9.94C8.73728 9.75673 8.46351 9.18581 8.64678 8.66482C8.96025 7.77371 9.57898 7.0223 10.3934 6.54367C11.2078 6.06503 12.1653 5.89007 13.0964 6.04977C14.0274 6.20947 14.8719 6.69352 15.4802 7.41619C16.0884 8.13872 16.4214 9.05314 16.4201 9.99758C16.4197 11.5279 15.2851 12.5386 14.4748 13.0787C14.0392 13.3691 13.6107 13.5827 13.295 13.723C13.1358 13.7938 13.0016 13.8475 12.905 13.8843C12.8566 13.9027 12.8174 13.917 12.7888 13.9272L12.7541 13.9393L12.743 13.9431L12.7391 13.9444L12.7376 13.9449C12.7373 13.945 12.7363 13.9453 12.4201 12.9967L12.7363 13.9453C12.2124 14.12 11.6461 13.8368 11.4714 13.3129C11.2969 12.7893 11.5796 12.2234 12.1028 12.0483L12.1016 12.0488C12.1017 12.0487 12.1018 12.0487 12.1028 12.0483L12.1188 12.0427C12.1342 12.0373 12.1594 12.0281 12.193 12.0153C12.2605 11.9896 12.3607 11.9496 12.4827 11.8954C12.7296 11.7856 13.051 11.6242 13.3654 11.4146C14.055 10.9549 14.4201 10.4658 14.4201 9.99667L14.4201 9.99518C14.4208 9.52286 14.2543 9.06553 13.9502 8.70419C13.646 8.34286 13.2238 8.10083 12.7582 8.02098Z"
+                      fill="#D0C2DE"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.5 17C11.5 16.4477 11.9477 16 12.5 16H12.5091C13.0614 16 13.51 16.4477 13.51 17C13.51 17.5523 13.0623 18 12.51 18H12.5009C11.9486 18 11.5 17.5523 11.5 17Z"
+                      fill="#D0C2DE"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="input__add-row">
+                  <input class="main__input" type="text" />
+                  <button type="button" class="input__add-btn main__btn-light">
+                    Добавить
+                  </button>
+                </div>
+                <div class="input__add_tags input__add_tags-red tag-items">
+                  <div class="tag-items_i">
+                    <p>Figma</p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 8.25L8.5 15.75"
+                        stroke="#EB92CD"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                      <path
+                        d="M8.5 8.25L16 15.75"
+                        stroke="#EB92CD"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="tag-items_i">
+                    <p>Figma</p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 8.25L8.5 15.75"
+                        stroke="#EB92CD"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                      <path
+                        d="M8.5 8.25L16 15.75"
+                        stroke="#EB92CD"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="tag-items_i">
+                    <p>Figma</p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 8.25L8.5 15.75"
+                        stroke="#EB92CD"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                      <path
+                        d="M8.5 8.25L16 15.75"
+                        stroke="#EB92CD"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="input__add">
+              <div class="step-s__input">
+                <div class="input__text-icon">
+                  <div class="step-s__input_text main__text-neutral no-margin">
+                    Какие личностные навыки вы получили - Soft Skills
+                  </div>
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.5 4C8.08172 4 4.5 7.58172 4.5 12C4.5 16.4183 8.08172 20 12.5 20C16.9183 20 20.5 16.4183 20.5 12C20.5 7.58172 16.9183 4 12.5 4ZM2.5 12C2.5 6.47715 6.97715 2 12.5 2C18.0228 2 22.5 6.47715 22.5 12C22.5 17.5228 18.0228 22 12.5 22C6.97715 22 2.5 17.5228 2.5 12Z"
+                      fill="#D0C2DE"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.7582 8.02098C12.2927 7.94113 11.814 8.02861 11.4068 8.26793C10.9996 8.50725 10.6902 8.88295 10.5335 9.32851C10.3502 9.8495 9.77926 10.1233 9.25827 9.94C8.73728 9.75673 8.46351 9.18581 8.64678 8.66482C8.96025 7.77371 9.57898 7.0223 10.3934 6.54367C11.2078 6.06503 12.1653 5.89007 13.0964 6.04977C14.0274 6.20947 14.8719 6.69352 15.4802 7.41619C16.0884 8.13872 16.4214 9.05314 16.4201 9.99758C16.4197 11.5279 15.2851 12.5386 14.4748 13.0787C14.0392 13.3691 13.6107 13.5827 13.295 13.723C13.1358 13.7938 13.0016 13.8475 12.905 13.8843C12.8566 13.9027 12.8174 13.917 12.7888 13.9272L12.7541 13.9393L12.743 13.9431L12.7391 13.9444L12.7376 13.9449C12.7373 13.945 12.7363 13.9453 12.4201 12.9967L12.7363 13.9453C12.2124 14.12 11.6461 13.8368 11.4714 13.3129C11.2969 12.7893 11.5796 12.2234 12.1028 12.0483L12.1016 12.0488C12.1017 12.0487 12.1018 12.0487 12.1028 12.0483L12.1188 12.0427C12.1342 12.0373 12.1594 12.0281 12.193 12.0153C12.2605 11.9896 12.3607 11.9496 12.4827 11.8954C12.7296 11.7856 13.051 11.6242 13.3654 11.4146C14.055 10.9549 14.4201 10.4658 14.4201 9.99667L14.4201 9.99518C14.4208 9.52286 14.2543 9.06553 13.9502 8.70419C13.646 8.34286 13.2238 8.10083 12.7582 8.02098Z"
+                      fill="#D0C2DE"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.5 17C11.5 16.4477 11.9477 16 12.5 16H12.5091C13.0614 16 13.51 16.4477 13.51 17C13.51 17.5523 13.0623 18 12.51 18H12.5009C11.9486 18 11.5 17.5523 11.5 17Z"
+                      fill="#D0C2DE"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="input__add-row">
+                  <input class="main__input" type="text" />
+                  <button type="button" class="input__add-btn main__btn-light">
+                    Добавить
+                  </button>
+                </div>
+                <div class="input__add_tags input__add_tags-green tag-items">
+                  <div class="tag-items_i">
+                    <p>Figma</p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 8.25L8.5 15.75"
+                        stroke="#38BF7E"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                      <path
+                        d="M8.5 8.25L16 15.75"
+                        stroke="#38BF7E"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="tag-items_i">
+                    <p>Figma</p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 8.25L8.5 15.75"
+                        stroke="#38BF7E"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                      <path
+                        d="M8.5 8.25L16 15.75"
+                        stroke="#38BF7E"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="tag-items_i">
+                    <p>Figma</p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 8.25L8.5 15.75"
+                        stroke="#38BF7E"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                      <path
+                        d="M8.5 8.25L16 15.75"
+                        stroke="#38BF7E"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="input__add">
+              <div class="step-s__input">
+                <div class="input__text-icon">
+                  <div class="step-s__input_text main__text-neutral no-margin">
+                    Какое профессионально ПО вы освоили - ПО
+                  </div>
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.5 4C8.08172 4 4.5 7.58172 4.5 12C4.5 16.4183 8.08172 20 12.5 20C16.9183 20 20.5 16.4183 20.5 12C20.5 7.58172 16.9183 4 12.5 4ZM2.5 12C2.5 6.47715 6.97715 2 12.5 2C18.0228 2 22.5 6.47715 22.5 12C22.5 17.5228 18.0228 22 12.5 22C6.97715 22 2.5 17.5228 2.5 12Z"
+                      fill="#D0C2DE"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12.7582 8.02098C12.2927 7.94113 11.814 8.02861 11.4068 8.26793C10.9996 8.50725 10.6902 8.88295 10.5335 9.32851C10.3502 9.8495 9.77926 10.1233 9.25827 9.94C8.73728 9.75673 8.46351 9.18581 8.64678 8.66482C8.96025 7.77371 9.57898 7.0223 10.3934 6.54367C11.2078 6.06503 12.1653 5.89007 13.0964 6.04977C14.0274 6.20947 14.8719 6.69352 15.4802 7.41619C16.0884 8.13872 16.4214 9.05314 16.4201 9.99758C16.4197 11.5279 15.2851 12.5386 14.4748 13.0787C14.0392 13.3691 13.6107 13.5827 13.295 13.723C13.1358 13.7938 13.0016 13.8475 12.905 13.8843C12.8566 13.9027 12.8174 13.917 12.7888 13.9272L12.7541 13.9393L12.743 13.9431L12.7391 13.9444L12.7376 13.9449C12.7373 13.945 12.7363 13.9453 12.4201 12.9967L12.7363 13.9453C12.2124 14.12 11.6461 13.8368 11.4714 13.3129C11.2969 12.7893 11.5796 12.2234 12.1028 12.0483L12.1016 12.0488C12.1017 12.0487 12.1018 12.0487 12.1028 12.0483L12.1188 12.0427C12.1342 12.0373 12.1594 12.0281 12.193 12.0153C12.2605 11.9896 12.3607 11.9496 12.4827 11.8954C12.7296 11.7856 13.051 11.6242 13.3654 11.4146C14.055 10.9549 14.4201 10.4658 14.4201 9.99667L14.4201 9.99518C14.4208 9.52286 14.2543 9.06553 13.9502 8.70419C13.646 8.34286 13.2238 8.10083 12.7582 8.02098Z"
+                      fill="#D0C2DE"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.5 17C11.5 16.4477 11.9477 16 12.5 16H12.5091C13.0614 16 13.51 16.4477 13.51 17C13.51 17.5523 13.0623 18 12.51 18H12.5009C11.9486 18 11.5 17.5523 11.5 17Z"
+                      fill="#D0C2DE"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="input__add-row">
+                  <input class="main__input" type="text" />
+                  <button type="button" class="input__add-btn main__btn-light">
+                    Добавить
+                  </button>
+                </div>
+                <div class="input__add_tags input__add_tags-yellow tag-items">
+                  <div class="tag-items_i">
+                    <p>Figma</p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 8.25L8.5 15.75"
+                        stroke="#E19500"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                      <path
+                        d="M8.5 8.25L16 15.75"
+                        stroke="#E19500"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="tag-items_i">
+                    <p>Figma</p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 8.25L8.5 15.75"
+                        stroke="#E19500"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                      <path
+                        d="M8.5 8.25L16 15.75"
+                        stroke="#E19500"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="tag-items_i">
+                    <p>Figma</p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 8.25L8.5 15.75"
+                        stroke="#E19500"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                      <path
+                        d="M8.5 8.25L16 15.75"
+                        stroke="#E19500"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="prof-e__bottom_buttons mt">
+              <button
+                type="button"
+                data-dismiss="modal"
+                class="prof-e__bottom_btn main__btn-light"
+              >
+                Отменить
+              </button>
+              <button
+                data-dismiss="modal"
+                type="submit"
+                class="prof-e__bottom_btn main__btn"
+              >
+                Готово
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
