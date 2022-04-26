@@ -76,7 +76,6 @@
     background: 0;
     position: fixed;
     top: 70%;
-
   }
   &__item:nth-child(even) {
     background: #fbfafd;
@@ -128,6 +127,7 @@
     display: flex;
     justify-content: flex-end;
     gap: 8px;
+    cursor: pointer;
   }
   &__btn-row button {
     font-weight: 400;
@@ -146,14 +146,8 @@
     background: #966cee;
     color: #fff;
   }
-  &__btn-row button:nth-child(1) {
+  &__btn-row label:nth-child(1) {
     display: none;
-    width: 77px;
-    height: 36px;
-    background: #ffffff;
-    border: 1px solid #efe8f8;
-    box-sizing: border-box;
-    border-radius: 8px;
   }
   &__btn-row button:nth-child(2) {
     width: 141px;
@@ -179,16 +173,116 @@
     box-sizing: border-box;
     border-radius: 8px;
   }
-  &__btn-row button:nth-child(5) {
+  &__btn-row label:nth-child(5) {
     display: none;
+  }
+}
+
+.item-btn {
+  cursor: pointer;
+
+  & input {
+    display: none;
+    &:checked ~ .item-btn__btn-fake {
+      background: #966cee;
+      color: #fff;
+    }
+  }
+
+  // .item__btn-fake
+  &__btn-fake {
     width: 77px;
     height: 36px;
     background: #ffffff;
     border: 1px solid #efe8f8;
     box-sizing: border-box;
     border-radius: 8px;
+    transition: all 0.3s ease 0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
+
+.item-btn-1{
+  cursor: pointer;
+
+  & input {
+    display: none;
+    &:checked ~ .item-btn-1__btn-fake {
+      background: #966cee;
+      color: #fff;
+    }
+  }
+
+  // .item__btn-fake
+  &__btn-fake {
+    width: 141px;
+    height: 36px;
+    background: #ffffff;
+    border: 1px solid #efe8f8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: all 0.3s ease 0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.item-btn-2{
+  cursor: pointer;
+
+  & input {
+    display: none;
+    &:checked ~ .item-btn-2__btn-fake {
+      background: #966cee;
+      color: #fff;
+    }
+  }
+
+  // .item__btn-fake
+  &__btn-fake {
+    width: 111px;
+    height: 36px;
+    background: #ffffff;
+    border: 1px solid #efe8f8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: all 0.3s ease 0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.item-btn-3{
+  cursor: pointer;
+
+  & input {
+    display: none;
+    &:checked ~ .item-btn-3__btn-fake {
+      background: #966cee;
+      color: #fff;
+    }
+  }
+
+  // .item__btn-fake
+  &__btn-fake {
+    width: 121px;
+    height: 36px;
+    background: #ffffff;
+    border: 1px solid #efe8f8;
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: all 0.3s ease 0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
 @media (max-width: 1570px) {
   .my-skills__present {
     left: 85%;
@@ -243,16 +337,16 @@
 }
 
 @media (max-width: $mobileSmall) {
-  .item__btn-row button:nth-child(1) {
+  .item__btn-row label:nth-child(1) {
     display: block;
   }
-  .item__btn-row button:nth-child(5) {
+  .item__btn-row label:nth-child(5) {
     display: block;
   }
-  .item__btn-row button:nth-child(2) {
+  .item__btn-row label:nth-child(2) {
     display: none;
   }
-  .item__btn-row button:nth-child(4) {
+  .item__btn-row label:nth-child(4) {
     display: none;
   }
 }
