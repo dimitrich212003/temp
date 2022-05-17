@@ -205,6 +205,22 @@ h6 {
   padding: 0 !important;
 }
 
+.no-border {
+  border: none !important;
+}
+
+.no-after {
+  &::after {
+    display: none !important;
+  }
+}
+
+.no-before {
+  &::before {
+    display: none;
+  }
+}
+
 .wid-i {
   width: fit-content;
   height: fit-content;
@@ -267,6 +283,10 @@ h6 {
   }
 }
 
+.ov-hid {
+  overflow: hidden;
+}
+
 .soar {
   position: relative;
   transition: all 0.5s ease 0s;
@@ -279,6 +299,49 @@ h6 {
   &:active {
     transform: translate(0, 0);
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.d-1 {
+  @media (min-width: $pc) {
+    display: none !important;
+  }
+}
+.d-1-none {
+  @media (max-width: $pc) {
+    display: none !important;
+  }
+}
+
+.d-2 {
+  @media (min-width: $tablet) {
+    display: none !important;
+  }
+}
+.d-2-none {
+  @media (max-width: $tablet) {
+    display: none !important;
+  }
+}
+
+.d-3 {
+  @media (min-width: $mobile) {
+    display: none !important;
+  }
+}
+.d-3-none {
+  @media (max-width: $mobile) {
+    display: none !important;
+  }
+}
+.d-4 {
+  @media (min-width: $mobileSmall) {
+    display: none !important;
+  }
+}
+.d-4-none {
+  @media (max-width: $mobileSmall) {
+    display: none !important;
   }
 }
 
@@ -1023,3 +1086,6 @@ h6 {
 @import "partials/student-trajectory-3";
 @import "partials/temp";
 @import "partials/my-skills";
+@import "partials/lend-teacher";
+@import "partials/docs";
+@import "partials/about-us";

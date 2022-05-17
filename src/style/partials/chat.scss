@@ -156,7 +156,7 @@
   }
   // .chat-b__messages
   &__messages {
-    flex: 1 0 250px;
+    flex: 0.3 0 330px;
     border-right: 1px solid #efe8f8;
     box-sizing: border-box;
   }
@@ -317,7 +317,9 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     line-height: 1.3em;
-    height: 3.9em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    //height: 3.9em;
 
     @media (max-width: $mobile) {
       @include adaptiveValue("width", 350, 150, 1);
@@ -358,6 +360,8 @@
   font-size: 16px;
   line-height: 24px;
   color: #392b4b;
+  align-self: end;
+  overflow-wrap: anywhere;
   @media (max-width: $mobile) {
     max-width: unset;
   }

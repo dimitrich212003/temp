@@ -10,6 +10,60 @@ const showHideButton = document.querySelector(".button__hide-show");
 const showHideText = document.querySelector(".text__hide-show");
 const showHideBlock = document.querySelector(".b-hide-show");
 
+const instrument = document.querySelectorAll(".ltc-instr__item");
+const instrumentImage = document.querySelectorAll(".ltc-instr__image");
+const openn = document.getElementById("open");
+
+const functionalItem = document.querySelectorAll(".ltc-ff__item");
+const functional = document.querySelectorAll(".ltc-ff__item_title");
+const funImage = document.querySelectorAll(".ltc-ff__img-t");
+const funMainImage = document.querySelector(".ltc-ff__img");
+
+if (functional) {
+  for (let i = 0; i < functional.length; i++) {
+    functionalItem[i].addEventListener("click", function (e) {
+      if (functional[i].classList.contains("active")) {
+        funImage.forEach((e) => {
+          e.classList.remove("_active");
+        });
+        funImage[i].classList.add("_active");
+        funMainImage.classList.remove("_active");
+      } else {
+        funImage.forEach((e) => {
+          e.classList.remove("_active");
+        });
+        funImage[i].classList.remove("_active");
+        funMainImage.classList.add("_active");
+      }
+    });
+  }
+}
+
+function ifOpen() {
+  instrument.forEach((instr) => {
+    if (!instr.classList.contains("ssshow")) {
+      openn.classList.add("opennn");
+    }
+  });
+}
+
+if (instrument) {
+  for (let i = 0; i < instrument.length; i++) {
+    instrument[i].addEventListener("mouseover", function (e) {
+      // this.classList.add("active");
+      instrumentImage[i].style.left = "0";
+      instrumentImage[i].classList.add("ssshow");
+      openn.classList.remove("opennn");
+    });
+    instrument[i].addEventListener("mouseout", function (e) {
+      // this.classList.remove("active");
+      instrumentImage[i].style.left = "-100vw";
+      instrumentImage[i].classList.remove("ssshow");
+      ifOpen();
+    });
+  }
+}
+
 function autosize() {
   var el = this;
   setTimeout(function () {
@@ -89,3 +143,26 @@ if ($(".radial-progress")) {
     })
     .trigger("scroll");
 }
+
+// tippy
+
+tippy("#tippy-point-1", {
+  content:
+    "Родилась идея создания сервиса, который помогает достигать карьерной цели",
+});
+tippy("#tippy-point-2", {
+  content:
+    "Родилась идея создания сервиса, который помогает достигать карьерной цели",
+});
+tippy("#tippy-point-3", {
+  content:
+    "Родилась идея создания сервиса, который помогает достигать карьерной цели",
+});
+tippy("#tippy-point-4", {
+  content:
+    "Родилась идея создания сервиса, который помогает достигать карьерной цели",
+});
+tippy("#tippy-point-5", {
+  content:
+    "Родилась идея создания сервиса, который помогает достигать карьерной цели",
+});

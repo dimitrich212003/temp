@@ -103,21 +103,25 @@ if (rangeInputP) {
 }
 
 function formSteps() {
-  form.addEventListener("submit", (e) => e.preventDefault());
+  if (form) {
+    form.addEventListener("submit", (e) => e.preventDefault());
+  }
 
   var formStepIndex = 0;
 
-  for (let i = 0; i < prevBtn.length; i++) {
-    prevBtn[i].addEventListener("click", () => {
-      formStepIndex--;
-      updateFormSteps();
-    });
-  }
-  for (let i = 0; i < nextBtn.length; i++) {
-    nextBtn[i].addEventListener("click", () => {
-      formStepIndex++;
-      updateFormSteps();
-    });
+  if (prevBtn.length > 0 || nextBtn.length > 0) {
+    for (let i = 0; i < prevBtn.length; i++) {
+      prevBtn[i].addEventListener("click", () => {
+        formStepIndex--;
+        updateFormSteps();
+      });
+    }
+    for (let i = 0; i < nextBtn.length; i++) {
+      nextBtn[i].addEventListener("click", () => {
+        formStepIndex++;
+        updateFormSteps();
+      });
+    }
   }
 
   for (let i = 0; i < steps.length; i++) {
@@ -141,42 +145,48 @@ function formSteps() {
     if (formStepIndex != 0) {
       for (var i = formStepIndex - 1; i >= 0; i--) {
         stepNumbers[i].classList.add("passed");
-        stepGaps[i].classList.add("passed");
+        if (stepGaps.length > 0) {
+          stepGaps[i].classList.add("passed");
+        }
       }
     }
     if (formStepIndex != steps.length - 1) {
       for (var i = formStepIndex + 1; i < steps.length; i++) {
         stepNumbers[i].classList.contains("passed") &&
           stepNumbers[i].classList.remove("passed");
-        stepGaps[i - 1].classList.contains("passed") &&
-          stepGaps[i - 1].classList.remove("passed");
+        if (stepGaps.length > 0) {
+          stepGaps[i - 1].classList.contains("passed") &&
+            stepGaps[i - 1].classList.remove("passed");
+        }
       }
     }
 
-    if (formStepIndex === 0) {
-      prevBtn.forEach((button) => {
-        button.style.display = "none";
-      });
-    } else {
-      prevBtn.forEach((button) => {
-        button.style.display = "block";
-      });
-    }
+    if (prevBtn.length > 0 || nextBtn.length > 0) {
+      if (formStepIndex === 0) {
+        prevBtn.forEach((button) => {
+          button.style.display = "none";
+        });
+      } else {
+        prevBtn.forEach((button) => {
+          button.style.display = "block";
+        });
+      }
 
-    if (formStepIndex === steps.length - 1) {
-      nextBtn.forEach((button) => {
-        button.innerHTML = "Готово";
-      });
-    } else {
-      nextBtn.forEach((button) => {
-        button.innerHTML = "Далее";
-      });
-    }
+      if (formStepIndex === steps.length - 1) {
+        nextBtn.forEach((button) => {
+          button.innerHTML = "Готово";
+        });
+      } else {
+        nextBtn.forEach((button) => {
+          button.innerHTML = "Далее";
+        });
+      }
 
-    if (nextBtn[formStepIndex].innerHTML == "Готово") {
-      nextBtn[formStepIndex].addEventListener("click", function () {
-        form.submit();
-      });
+      if (nextBtn[formStepIndex].innerHTML == "Готово") {
+        nextBtn[formStepIndex].addEventListener("click", function () {
+          form.submit();
+        });
+      }
     }
   }
 

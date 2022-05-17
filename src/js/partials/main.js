@@ -164,6 +164,28 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+  $(".ltc-ff__item_title").click(function (event) {
+    if ($(".ltc-ff__list").hasClass("spollers")) {
+      $(".ltc-ff__item_title").not($(this)).removeClass("active");
+      $(".ltc-ff__item_text").not($(this).next()).slideUp(300);
+    }
+    $(this).toggleClass("active").next().slideToggle(300);
+  });
+});
+
+$(document).ready(function () {
+  $(".ltc-f__item_title").click(function (event) {
+    if ($(".ltc-f__list").hasClass("spollers")) {
+      $(".ltc-f__item_title").not($(this)).removeClass("active");
+      $(".ltc-f__item").not($(this).parent()).removeClass("active");
+      $(".ltc-f__item_text").not($(this).next()).slideUp(300);
+    }
+    $(this).parent().toggleClass("active");
+    $(this).toggleClass("active").next().slideToggle(300);
+  });
+});
+
+$(document).ready(function () {
   if ($(window).width() < 992) {
     $(".footer__title").click(function (event) {
       $(".footer__title").not($(this)).removeClass("active");

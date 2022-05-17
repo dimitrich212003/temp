@@ -193,12 +193,60 @@ const swiperEleven = new Swiper(".videos-sl2__slider", {
     nextEl: ".swiper-button-next-s",
     prevEl: ".swiper-button-prev-s",
   },
-  // breakpoints: {
-  //   0: {
-  //     spaceBetween: 8,
-  //   },
-  //   768: {
-  //     spaceBetween: 16,
-  //   },
-  // },
+});
+const swiperTwelve = new Swiper(".ltc-h__slider", {
+  // Optional parameters
+
+  slidesPerView: "auto",
+  spaceBetween: 24,
+});
+const swiperThirteen = new Swiper(".ltc-gls__slider", {
+  // Optional parameters
+  pagination: {
+    el: ".swiper-pagination-grey",
+    clickable: true,
+  },
+});
+const swiperFourteen = new Swiper(".ltc-w__slider", {
+  // Optional parameters
+
+  spaceBetween: 24,
+  pagination: {
+    el: ".swiper-pagination-grey",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+  },
+});
+const swiperFiveteen = new Swiper(".abus-fw__slider", {
+  // Optional parameters
+  spaceBetween: 24,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+const swiperSixteen = new Swiper(".abus-h__slider", {
+  // Optional parameters
+
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next-s",
+    prevEl: ".swiper-button-prev-s",
+  },
+
 });

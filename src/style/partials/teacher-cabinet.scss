@@ -188,7 +188,7 @@ svg.radial-progress circle {
     height: 100%;
     background-image: url(../../img/ava_teacher-square.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     flex: 0 0 auto;
     @media (max-width: $tablet) {

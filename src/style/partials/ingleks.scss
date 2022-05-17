@@ -1,95 +1,9 @@
-.about-course {
-  // .about-course__container
-  &__container {
-  }
-  // .about-course__main
-  &__main {
-  }
-  // .about-course__maintitle
-  &__maintitle {
-  }
-  // .about-course__maintext
-  &__maintext {
-  }
-  // .about-course__text
-  &__text {
-  }
-  // .about-course__title
-  &__title {
-  }
-  // .about-course__text-bold
-  &__text-bold {
-  }
-  // .about-course__text-neutral
-  &__text-neutral {
-  }
-}
-
-.content-wrapper {
-}
-.padding {
-}
-.container {
-}
-.row {
-}
-.col-lg-4 {
-}
-.col-xl-3 {
-}
-.order-lg-2 {
-}
-.bar {
-}
-.left-sidebar {
-  // .left-sidebar__link
-  &__link {
-  }
-  // .left-sidebar__link-2
-  &__link-2 {
-  }
-}
-.side {
-  // .side_block
-  &_block {
-  }
-}
-.block {
-  // .block_details
-  &_details {
-  }
-  // .block_feature
-  &_feature {
-  }
-}
-.company {
-  // .company_details
-  &_details {
-  }
-}
-.logos {
-}
 .border-b {
   border-bottom: 1px solid #efe8f8;
   margin-bottom: 16px;
   padding-bottom: 16px;
 }
-.icon {
-  // .icon_location-black
-  &_location-black {
-  }
-  // .icon_phone-black
-  &_phone-black {
-  }
-  // .icon_emain-black
-  &_emain-black {
-  }
-}
-.letf-sidebar {
-  // .letf-sidebar__previos
-  &__previos {
-  }
-}
+
 .previos {
   margin-bottom: 40px;
   // .previos__recomend
@@ -107,12 +21,6 @@
       height: 20px;
       left: 0;
       top: 3px;
-    }
-    // .previos__recomend_title
-    &_title {
-    }
-    // .previos__recomend_text
-    &_text {
     }
   }
   // .previos__licence
@@ -139,63 +47,14 @@
     }
   }
 }
-.col-lg-8 {
-}
-.col-xl-9 {
-}
-.order-lg-1 {
-}
-.main-course {
-  // .main-course__about
-  &__about {
-  }
-}
-.course {
-  // .course__content
-  &__content {
-  }
-}
-.b-1 {
-}
-.fir {
-}
+
 .ingleks {
-  // .ingleks__subjects
-  &__subjects {
-  }
   // .ingleks__rocket
   &__rocket {
     margin: 0;
   }
-  // .ingleks__numbers
-  &__numbers {
-  }
-  // .ingleks__benefits
-  &__benefits {
-  }
-  // .ingleks__sertificat
-  &__sertificat {
-  }
-  // .ingleks__skillbox-stage
-  &__skillbox-stage {
-  }
-  // .ingleks__cards
-  &__cards {
-  }
-  // .ingleks__mentors
-  &__mentors {
-  }
-  // .ingleks__teachers
-  &__teachers {
-  }
 }
 .subjects {
-  // .subjects__container
-  &__container {
-  }
-  // .subjects__title
-  &__title {
-  }
   // .subjects__list
   &__list {
     display: flex;
@@ -216,45 +75,8 @@
     }
   }
 }
-.main {
-  // .main__title
-  &__title {
-  }
-  // .main__text
-  &__text {
-  }
-  // .main__item-of-subjects
-  &__item-of-subjects {
-  }
-}
-.soar {
-}
-.rocket {
-  // .rocket__container
-  &__container {
-  }
-  // .rocket__main
-  &__main {
-  }
-}
-.main-rocket {
-  // .main-rocket__content
-  &__content {
-  }
-  // .main-rocket__title
-  &__title {
-  }
-  // .main-rocket__text
-  &__text {
-  }
-  // .main-rocket__bg
-  &__bg {
-  }
-}
+
 .numbers {
-  // .numbers__container
-  &__container {
-  }
   // .numbers__list
   &__list {
     display: flex;
@@ -265,9 +87,7 @@
       gap: 16px;
     }
   }
-  // .numbers__item
-  &__item {
-  }
+
   // .numbers__number
   &__number {
     font-style: normal;
@@ -287,36 +107,16 @@
   }
 }
 .benefits {
-  // .benefits__container
-  &__container {
-  }
-  // .benefits__titl
-  &__titl {
-  }
-  // .benefits__list
-  &__list {
-  }
-  // .benefits__item
-  &__item {
-    // .benefits__item_prev
-    &_prev {
-    }
-    // .benefits__item_before
-    &_before {
-    }
-    // .benefits__item_titl
-    &_titl {
-      margin-bottom: 16px;
-      padding-right: 39px;
-      @media (max-width: $tablet) {
-        margin: 0;
-      }
-    }
-    // .benefits__item_text
-    &_text {
+  // .benefits__item_titl
+  &_titl {
+    margin-bottom: 16px;
+    padding-right: 39px;
+    @media (max-width: $tablet) {
+      margin: 0;
     }
   }
 }
+
 .small {
   position: relative;
   transform: scale(1) !important;
@@ -366,22 +166,11 @@
   }
 }
 .skillbox-stage {
-  // .skillbox-stage__container
-  &__container {
-  }
-  // .skillbox-stage__title
-  &__title {
-  }
   // .skillbox-stage__text
   &__text {
     margin-bottom: 40px;
   }
-  // .skillbox-stage__slider
-  &__slider {
-  }
-  // .skillbox-stage__wrapper
-  &__wrapper {
-  }
+
   // .skillbox-stage__slide
   &__slide {
     max-width: 400px;
@@ -398,36 +187,36 @@
 
 .in-show {
   display: none;
-  @media (max-width:$pc){
-     display: block; 
+  @media (max-width: $pc) {
+    display: block;
   }
 }
 .in-hide {
-  @media (max-width:$pc){
-     display: none; 
+  @media (max-width: $pc) {
+    display: none;
   }
 }
 .in-show-slides {
   display: none;
-  @media (max-width:$pc){
-     display: block; 
+  @media (max-width: $pc) {
+    display: block;
   }
-  @media (max-width:$tablet){
+  @media (max-width: $tablet) {
     display: none;
   }
-  @media (max-width:$mobile){
-     display: block; 
+  @media (max-width: $mobile) {
+    display: block;
   }
 }
 .in-hide-slides {
-  @media (max-width:$pc){
-     display: none; 
+  @media (max-width: $pc) {
+    display: none;
   }
-  @media (max-width:$tablet){
+  @media (max-width: $tablet) {
     display: block;
   }
-  @media (max-width:$mobile){
-     display: none; 
+  @media (max-width: $mobile) {
+    display: none;
   }
 }
 
@@ -435,11 +224,7 @@
   padding: 0 5px;
 }
 
-
 .cards {
-  // .cards__container
-  &__container {
-  }
   // .cards__list
   &__list {
     display: flex;
@@ -489,20 +274,12 @@
         width: 400px;
       }
     }
-    // .cards__item_text
-    &_text {
-    }
-    // .cards__item_text
-    &_text {
-    }
   }
 }
 .cards-video {
   border-radius: 16px;
 }
 
-.con-1 {
-}
 .con-2 {
   .cards__item_content {
     order: 2;
@@ -523,9 +300,6 @@
   &__title {
     font-weight: bold;
   }
-  // .text-item__text
-  &__text {
-  }
 }
 .mentors {
   // .mentors__container
@@ -534,9 +308,6 @@
   // .mentors__title
   &__title {
     @include adaptiveValue("margin-bottom", 40, 20, 1);
-  }
-  // .mentors__list
-  &__list {
   }
   // .mentors__item
   &__item {
@@ -551,37 +322,5 @@
   // .mentors__name
   &__name {
     margin-bottom: 8px;
-  }
-  // .mentors__text
-  &__text {
-  }
-}
-.teachers {
-  // .teachers__container
-  &__container {
-  }
-  // .teachers__title
-  &__title {
-  }
-  // .teachers__list
-  &__list {
-  }
-  // .teachers__item
-  &__item {
-  }
-  // .teachers__link
-  &__link {
-  }
-  // .teachers__image
-  &__image {
-  }
-  // .teachers__info
-  &__info {
-    // .teachers__info_name
-    &_name {
-    }
-    // .teachers__info_whois
-    &_whois {
-    }
   }
 }
